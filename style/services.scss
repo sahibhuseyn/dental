@@ -1,0 +1,103 @@
+@import "common.scss";
+@import "home.scss";
+
+.services{
+	background:$secondary-color;
+}
+
+.divider{
+	margin:30px 0 30px;
+}
+
+#shuffled_carousel{
+	padding:$padding*5 0;
+	.container{
+		.row{
+			.col-md-3{
+				ul{
+					list-style:none;
+					border-right:1px solid #bdbdbd;
+					position: static;
+					li{
+						font-size:$font-size*8;
+						margin-bottom:$margin;
+						text-transform:uppercase;
+						line-height:1.6;
+						a{
+							@include common-link;
+							color:#868686;
+							font-weight:$font-weight*5;
+							padding-right:20px;
+							letter-spacing:0.06em;
+							position:relative;
+							left:1px;
+							top:-2px;
+							&:hover{
+								color:darken(#868686,20%);
+							}
+						}
+					}
+				}
+			}
+			.col-md-9{
+				.services_info{
+					.general_dent{
+						@include transition(.2s, scale .2s .3s);
+						.general_dent_bottom{
+							>div{
+								width:50%;
+								float:left;
+							}
+						}
+					}
+					.cosmetic_dent{
+						>a{
+						@include ellipse-link();
+						}
+					}
+					.dental_implant{
+						>a{
+						@include ellipse-link();
+						}
+					}
+					.teeth_whitening{
+						ul{
+							li{
+								list-style:none;
+								position: relative;
+								&:before{
+									content:"\f142";
+									font-family:$material-font;
+									color:$main-color;
+									font-size:$font-size*7;
+								}
+							}
+						}
+						>a{
+						@include ellipse-link();
+						}
+					}
+					.dental_crowns{
+						>a{
+							@include ellipse-link();
+						}
+					}
+					.dentures{
+						ul{
+							li{
+								list-style:none;
+								position: relative;
+								&:before{
+									content:"\f142";
+									font-family:$material-font;
+									color:$main-color;
+									font-size:$font-size*7;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

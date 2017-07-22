@@ -1,0 +1,50 @@
+@import "common.scss";
+@import "home.scss";
+
+.departments{
+	background:$secondary-color;
+}
+
+.pediatric_dent_img{
+	background-image:url(https://livedemo00.template-help.com/wt_61219/images/pages/departments-01-960-611.jpg);
+	height:600px;
+	width:100%;
+}
+.restorative_dent_img{
+	background-image:url(https://livedemo00.template-help.com/wt_61219/images/pages/departments-02-960-611.jpg);
+	height:600px;
+	width:100%;
+}
+.cosmetic_dent_img{
+	background-image:url(https://livedemo00.template-help.com/wt_61219/images/pages/departments-03-960-611.jpg);
+	height:600px;
+	width:100%;
+}
+.divider{
+	margin:30px 0 30px;
+}
+#pediatric_dent,#restorative_dent,#cosmetic_dent{
+	.container-fluid{
+		.col-md-6{
+			.pedtiaric_dent_left_side{
+				padding:$padding*4 $padding*4;
+				.lighten_text{
+					padding-right:$padding*3;
+					padding-bottom:$padding*2;
+				}
+				>a{
+				@include ellipse-link();
+				@include transition(.3s, background .2s);
+				&:hover{
+					background:$main-color;
+					}
+				}
+			}
+			.right_side{
+				width:50vw;
+				background-size: cover;
+			}
+		}
+	}
+}
+

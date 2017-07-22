@@ -1,0 +1,37 @@
+@import "common.scss";
+@import "home.scss";
+
+.team{
+	background:$secondary-color;
+}
+
+#four_col_layout{
+	padding:$padding*4 0;
+}
+#full_width_layout{
+	padding-bottom:$padding*2;
+	.container-fluid{
+		padding-right:0;
+		margin-right:0;
+		.row{
+			.col-md-2{
+				width:19.666667%;
+				margin:0;
+				padding:0;
+				overflow:hidden;
+				figure{
+					margin:0;
+					&:nth-child(2n){
+						.description{
+							background-color:darken($main-color,10%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#three_col_layout{
+	padding:$padding*3 0;
+	margin-bottom:$margin*3;
+}
